@@ -1,0 +1,67 @@
+@(wui: controllers.WuiController)
+
+
+<div id="background" class="background_aos">
+    <div id="header">
+        <div id="leftHeader">
+            <div id="ressources" class="background_ressources">
+                <span id="wood" class="ressources_span"></span>
+                <span id="food" class="ressources_span"></span>
+                <span id="gold" class="ressources_span"></span>
+                <span id="stone" class="ressources_span"></span>
+                <span id="settler" class="ressources_span"></span>
+            </div>   
+            <div class="dropdown">
+                <button onclick="dropdownMenu()" type="button" class="dropbtn">Menü</button>
+                <div id="dropDownMenu" class="dropdown_content">
+                    <a onclick="newGame()">Neues Spiel</a>
+                    <a onclick="saveGame()">Spiel speichern</a>
+                    <a onclick="loadGame()">Spiel laden</a>
+                    <a onclick="openHighscore()">Highscore</a>
+                    <a onclick="exit()">Beenden</a>
+                  </div>
+            </div> 
+            <div style="clear: both;"></div>
+        </div>
+        <div id="rightHeader">
+            
+
+        </div>
+        
+    </div>
+    <div id="body" class="body">
+        <div id="leftContainer" class="left_container">
+            <div id="buldingInfo" class="building_info">
+                <div id="buldingInfoHead" class="building_info_head">
+                    <img onclick="closeBuildingInfo()" src="/assets/images/closeButton.png" id="buldingInfoCloseButton" class="building_info_close_button">
+                </div>
+                <div id="buldingInfoBody" class="building_info_body">
+                    
+                </div>
+                <div id="buldingInfoFooter" class="building_info_footer">
+                    <img onclick="buildBuilding()" src="/assets/images/buttonBauen.png" id="buldingButton" class="build_button">
+                </div>
+            </div>
+        </div>
+        <div id="rightContainer" class="right_container">
+            @statistic()
+        </div>
+        
+    </div>
+    <div id="footer">
+        <div id="hud" class="background_hud">
+            <div id="buildingIconContainer" class="building_icon_container">
+            	@for(i <- wui.controller.getAlleVerfuegbarenGebauede.getAlle) {
+
+					<img title="@i._name" onclick="openBuildingInfo('@{"" + i.name.toString() }')" src="@{"assets/images/" + i.name.toString() + ".png"}" id="@i.name" class="buildingIcon">
+					
+				}
+                
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    

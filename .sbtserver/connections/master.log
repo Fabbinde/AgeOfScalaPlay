@@ -1,0 +1,16 @@
+New log file opened at Sat Jan 14 22:19:25 CET 2017 by 1556@DESKTOP-GEBMIDM
+Taking next connection to: 58192
+New client attempting to connect on port: 58193-58192
+  Address = /192.168.56.1:58192
+This client on port 58193 has uuid 6b607948-8d9e-4647-941e-95831e2bf64d configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-6b607948-8d9e-4647-941e-95831e2bf64d
+Taking next connection to: 58192
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 58192
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 1556@DESKTOP-GEBMIDM logs at Sat Jan 14 22:25:26 CET 2017, goodbye.

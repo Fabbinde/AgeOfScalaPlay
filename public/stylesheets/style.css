@@ -1,0 +1,206 @@
+html {
+	height: 100%;
+}
+
+body {
+	/*background-image: url("/assets/images/age_of_empires_2_desktop_7812x4035_wallpaper.jpg");*/
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+.background_aos {
+	display: block;
+	margin: auto;
+	width: 50%;
+	background-image: url("/assets/images/background.png");
+	width: 1024px;
+	height: 576px;
+	position: relative;
+	font-family: "Poor Richard";
+	color: white;
+}
+
+.background_hud {
+	background-image: url("/assets/images/hud.png");
+	width: 1026px;
+	height: 173px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.background_ressources {
+	background-image: url("/assets/images/Ressourcen.jpg");
+	width: 391px;
+	height: 25px;
+	float: left;
+}
+
+.body {
+	
+}
+
+.left_container {
+	float: left;
+}
+
+.right_container {
+	float: right;
+	margin-top: 10px;
+}
+
+.building_info {
+	background-image: url("/assets/images/gebauedeInfoSmall.png");
+	width: 282px;
+	height: 305px;
+	margin-top: 10px;
+	visibility: hidden;
+}
+
+.building_info_body {
+	padding-left: 40px;
+	padding-top: 20px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 16px;
+}
+
+.build_button {
+	margin-top: 20px;
+	margin-left: 70px;
+	cursor: pointer;
+}
+
+.building_info_close_button {
+	float: right;
+	margin-top: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.statistics {
+	background-image: url("/assets/images/konsole2.png");
+	height: 300px;
+	width: 502px;
+}
+
+.statistics_div {
+	font-size: 16px;
+	padding-left: 15px;
+	padding-top: 10px;
+}
+
+.bold {
+	font-size: 16px;
+}
+
+.building_icon_container {
+	margin-left: 50px;
+	margin-top: 30px;
+	width: 200px;
+}
+
+.buildingIcon {
+	width: 35px;
+	height: 35px;
+	margin-right: 10px;
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+
+.ressources_span {
+	position: fixed;
+	font-size: 12px;
+	width: 120px;
+}
+
+#wood {
+	margin-top: 4px;
+	margin-left: 30px;
+}
+
+#food {
+	margin-top: 4px;
+	margin-left: 105px;
+}
+
+#gold {
+	margin-top: 4px;
+	margin-left: 196px;
+}
+
+#stone {
+	margin-top: 4px;
+	margin-left: 258px;
+}
+
+#settler {
+	margin-top: 4px;
+	margin-left: 340px;
+}
+
+.left_header {
+	width: 391px;
+}
+
+.right_header {
+	float: right;
+}
+
+.dialogP {
+	font-size: 14px!;
+}
+
+/* Dropdown Button */
+.dropbtn {
+	background-image: url("/assets/images/button.png");
+	color: white;
+	height: 25px;
+	width: 73px;
+	font-family: "Poor Richard";
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	position: relative;
+	top: 0;
+	margin-left: 5px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+	background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown_content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	right: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown_content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown_content a:hover {
+	background-color: grey
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+	display: block;
+}
